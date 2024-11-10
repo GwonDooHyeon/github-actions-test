@@ -1,0 +1,14 @@
+name: Github Actions CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  my-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello world 출력
+        run: echo "Hello world"
